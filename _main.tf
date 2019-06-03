@@ -11,7 +11,7 @@ terraform {
         #cant contain interpolations
         encrypt = true
         bucket = "noama-production-terraform-remote-state"
-        dynamodb_table = "terraform-state-lock-dynamo"
+        dynamodb_table = "terraform-noama-state-lock-dynamo"
         region = "us-west-1" 
         key = "terraform/state"
     }

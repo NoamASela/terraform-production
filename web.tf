@@ -1,5 +1,6 @@
 module "web" {
   source              = "github.com/NoamASela/terraform-modules/web"
+  //source              = "../terraform-modules/web"
   web_instance_count  = "${var.web_instance_count}"
   region              = "${var.region}"
   instance_type       = "t2.micro"

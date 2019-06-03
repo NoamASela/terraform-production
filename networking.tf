@@ -1,5 +1,6 @@
 module "networking" {
   source              = "github.com/NoamASela/terraform-modules/networking"
+  //source              = "../terraform-modules/networking"
   environment         = "${var.environment}"
   vpc_cidr            = "${var.vpc_cidr}"
   public_subnet_cidr  = "${var.public_subnet_cidr}"
